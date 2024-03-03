@@ -8,7 +8,7 @@ mistypes = {"a":["q","s","z"],"b":["g","n"],"c":["x","v","d","f"],"d":["s","e","
 
 wpm = random.randint(0,15)+80
 
-accuracy = (-0.071*((wpm-80)*(wpm-80)))+100
+accuracy = (-0.037*((wpm-80)*(wpm-80)))+100
 print("accuracy:", accuracy, " | wpm:", wpm)
 total_mistypes = 0
 cpm=wpm*5
@@ -18,7 +18,7 @@ time.sleep(2)
 total_a = 0
 
 #500
-for char in 'Hello World! My names Ali. And also, how are you doing tdy?Hello World! My names Ali. And also, how are you doing tdy? Hello World! My names Ali. And also, how are you doing tdy? Hello World! My names Ali. And also, how are you doing tdy?':
+for char in ('Hello World! I am a preprogramed typing algorithm. I am not typing this. Lol. Hi. Or something. e.'):
     if random.randint(0,100) >= accuracy:
         if char in mistypes:
             print("mistype")
